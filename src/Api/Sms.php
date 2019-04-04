@@ -20,7 +20,7 @@ class Sms extends ApiRelatorio
      * @param \DateTime $dataCriacao
      * @return mixed
      */
-    public function enviar($numeroDestino, $mensagem, $respostaUsuario = false, $tags,  $multiSMS = false, \DateTime $dataCriacao = null)
+    public function enviar($numeroDestino, $mensagem, $respostaUsuario = false, $tags = false,  $multiSMS = false, \DateTime $dataCriacao = null)
     {
         if($dataCriacao instanceof \DateTime) {
             $dataCriacao->setTimezone(new \DateTimeZone('UTC'));
